@@ -38,10 +38,10 @@ func main() {
 		dm3 := telegram.Gas.LastRecord.Value
 
 		fmt.Println("multigraph p1_kWh")
-		fmt.Printf("kWh.value %d\n", int(kWh*1000*60*60))
+		fmt.Printf("kWh.value %d\n", int64(kWh*1000*60*60))
 		fmt.Println("")
 		fmt.Println("multigraph p1_dm3")
-		fmt.Printf("dm3.value %d\n", int(dm3*1000))
+		fmt.Printf("dm3.value %d\n", int64(dm3*1000))
 		return
 	}
 

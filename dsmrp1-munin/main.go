@@ -34,7 +34,9 @@ func main() {
 			log.Fatal("No data, yet")
 		}
 
-		kWh := (telegram.Electricity.KWh + telegram.Electricity.KWhLow)
+		e := telegram.Electricity
+
+		kWh := e.KWh + e.KWhLow - e.KWhOut + e.KWhOutLow
 		dm3 := telegram.Gas.LastRecord.Value
 
 		fmt.Println("multigraph p1_kWh")

@@ -52,6 +52,7 @@ type ElectricityData struct {
 	L1VoltageSags   int32   `obis:"1-0:32.32.0" type:"int"`
 	L1VoltageSwells int32   `obis:"1-0:32.36.0" type:"int"`
 	L1Current       float32 `obis:"1-0:31.7.0" type:"unit"`
+	L1Voltage       float32 `obis:"1-0:32.7.0" type:"unit"`
 	L1Power         float32 `obis:"1-0:21.7.0" type:"unit"`
 	L1PowerOut      float32 `obis:"1-0:22.7.0" type:"unit"`
 }
@@ -60,11 +61,13 @@ type MultiphaseElectricityData struct {
 	L2VoltageSags   int32   `obis:"1-0:52.32.0" type:"int"`
 	L2VoltageSwells int32   `obis:"1-0:52.36.0" type:"int"`
 	L2Current       float32 `obis:"1-0:51.7.0" type:"unit"`
+	L2Voltage       float32 `obis:"1-0:52.7.0" type:"unit"`
 	L2Power         float32 `obis:"1-0:41.7.0" type:"unit"`
 	L2PowerOut      float32 `obis:"1-0:42.7.0" type:"unit"`
 	L3VoltageSags   int32   `obis:"1-0:72.32.0" type:"int"`
 	L3VoltageSwells int32   `obis:"1-0:72.36.0" type:"int"`
 	L3Current       float32 `obis:"1-0:71.7.0" type:"unit"`
+	L3Voltage       float32 `obis:"1-0:72.7.0" type:"unit"`
 	L3Power         float32 `obis:"1-0:61.7.0" type:"unit"`
 	L3PowerOut      float32 `obis:"1-0:62.7.0" type:"unit"`
 }

@@ -34,10 +34,10 @@ var normalizedUnits map[string]float32 = map[string]float32{
 }
 
 type ElectricityData struct {
-	KWh       float32 `obis:"1-0:1.8.1" type:"unit"`
-	KWhLow    float32 `obis:"1-0:2.8.1" type:"unit"`
+	KWh       float32 `obis:"1-0:1.8.2" type:"unit"`
+	KWhLow    float32 `obis:"1-0:1.8.1" type:"unit"`
 	KWhOut    float32 `obis:"1-0:2.8.2" type:"unit"`
-	KWhOutLow float32 `obis:"1-0:1.8.2" type:"unit"`
+	KWhOutLow float32 `obis:"1-0:2.8.1" type:"unit"`
 	Tariff    Tariff  `obis:"0-0:96.14.0" type:"int"`
 
 	W         float32  `obis:"1-0:1.7.0" type:"unit"`
